@@ -1,10 +1,10 @@
-import { plugin } from '@repo/eslint-config';
+import { plugin } from '@jablab/eslint-plugin';
 
 /** @type {import("eslint").Linter.Config} */
 export default [
 	{
 		plugins: {
-			'@repo/eslint-plugin': plugin,
+			'@jablab/eslint-plugin': plugin,
 		},
 	},
 	...plugin.configs.next,

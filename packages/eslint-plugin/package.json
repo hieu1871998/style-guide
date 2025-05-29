@@ -3,7 +3,7 @@
 		"@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
 		"@eslint/js": "^9.27.0",
 		"@next/eslint-plugin-next": "^15.3.2",
-		"@repo/typescript-config": "workspace:*",
+		"@jablab/typescript-config": "workspace:*",
 		"@stylistic/eslint-plugin": "^4.4.0",
 		"@types/node": "^22.15.23",
 		"eslint": "^9.27.0",
@@ -28,11 +28,19 @@
 	},
 	"exports": {
 		".": {
-			"types": "./src/types/plugin.d.ts",
-			"import": "./src/index.js"
+			"import": "./src/index.js",
+			"types": "./src/types/plugin.d.ts"
 		}
 	},
-	"name": "@repo/eslint-config",
+	"keywords": [
+		"eslint",
+		"eslint-config",
+		"eslint-plugin",
+		"eslintplugin",
+		"typescript",
+		"typescript-eslint"
+	],
+	"name": "@jablab/eslint-plugin",
 	"private": true,
 	"type": "module",
 	"version": "0.0.0"
