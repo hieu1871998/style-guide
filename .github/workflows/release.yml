@@ -18,6 +18,14 @@ jobs:
       - name: Install
         uses: ./.github/composite-actions/install
 
+      - name: Modify .npmrc for publishing to npm
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
