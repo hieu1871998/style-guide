@@ -1,11 +1,13 @@
 {
+	"description": "Opinionated ESLint plugin and flat config for JS, TS, React, and Next.js",
 	"devDependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
 		"@eslint/js": "^9.27.0",
-		"@next/eslint-plugin-next": "^15.3.2",
 		"@jablab/typescript-config": "workspace:*",
+		"@next/eslint-plugin-next": "^15.3.2",
 		"@stylistic/eslint-plugin": "^4.4.0",
 		"@types/node": "^22.15.23",
+		"@vitest/eslint-plugin": "^1.2.1",
 		"eslint": "^9.27.0",
 		"eslint-config-prettier": "^10.1.5",
 		"eslint-import-resolver-alias": "^1.1.2",
@@ -29,7 +31,7 @@
 	"exports": {
 		".": {
 			"import": "./src/index.js",
-			"types": "./src/types/plugin.d.ts"
+			"types": "./src/types/index.d.ts"
 		}
 	},
 	"keywords": [
@@ -40,8 +42,19 @@
 		"typescript",
 		"typescript-eslint"
 	],
+	"main": "./src/index.js",
 	"name": "@jablab/eslint-plugin",
-	"private": true,
+	"peerDependencies": {
+		"eslint": ">=9.27.0",
+		"typescript": ">=5.8.0",
+		"typescript-eslint": ">=8.33.0"
+	},
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
 	"type": "module",
+	"types": "./src/types/index.d.ts",
 	"version": "0.0.0"
 }

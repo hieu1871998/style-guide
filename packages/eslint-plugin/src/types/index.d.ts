@@ -12,5 +12,6 @@ declare const plugin: {
 		readonly next: Readonly<Linter.Config[]>;
 		readonly react: Readonly<Linter.Config[]>;
 		readonly typescript: Readonly<Linter.Config[]>;
+		readonly vitest: Readonly<Linter.Config[]>;
 	};
 };

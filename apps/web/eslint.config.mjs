@@ -8,4 +8,5 @@ export default [
 		},
 	},
 	...plugin.configs.next,
+	...plugin.configs.vitest,
 ];

@@ -122,6 +122,16 @@ const rules = {
 			considerDefaultExhaustiveForUnions: true,
 		},
 	],
+	/**
+	 * Disallow empty object types.
+	 *
+	 * This rule is useful to prevent the accidental creation of empty interfaces or types that do not provide any value.
+	 *
+	 * Allow empty interfaces that extend from a single base interface.
+	 *
+	 * 🚫 Not fixable - https://typescript-eslint.io/rules/no-empty-object-type/
+	 */
+	'@typescript-eslint/no-empty-object-type': ['error', { allowInterfaces: 'with-single-extends' }],
 };
 
 export default rules;

@@ -7,20 +7,24 @@ import typescriptExtensionRules from '../rules/typescript.extension.js';
 import typescriptImportRules from '../rules/typescript.import.js';
 import typescriptRules from '../rules/typescript.js';
 
+/** @type {import('eslint').Linter.Config} */
+export const tseslintConfig = {
+	name: '@jablab/eslint-config-typescript',
+	files: TYPESCRIPT_FILES,
+	rules: {
+		...typescriptRules,
+		...typescriptExtensionRules,
+		...typescriptImportRules,
+	},
+};
+
 /** @type {import('eslint').Linter.Config[]} */
-const config = [
+const configs = [
 	...tseslint.configs.strictTypeChecked,
 	...tseslint.configs.stylisticTypeChecked,
 	importPlugin.flatConfigs.typescript,
 	eslintConfigPrettier,
-	{
-		files: TYPESCRIPT_FILES,
-		rules: {
-			...typescriptRules,
-			...typescriptExtensionRules,
-			...typescriptImportRules,
-		},
-	},
+	tseslintConfig,
 ];
 
-export default config;
+export default configs;

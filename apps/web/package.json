@@ -10,17 +10,25 @@
 		"@types/node": "^22.15.23",
 		"@types/react": "19.1.6",
 		"@types/react-dom": "19.1.5",
+		"@vitejs/plugin-react": "^4.5.0",
+		"@vitest/coverage-v8": "3.1.4",
 		"eslint": "^9.27.0",
-		"typescript": "5.8.3"
+		"jsdom": "^26.1.0",
+		"playwright": "^1.52.0",
+		"typescript": "5.8.3",
+		"vitest": "^3.1.4",
+		"vitest-browser-react": "^0.2.0"
 	},
 	"name": "web",
 	"private": true,
 	"scripts": {
 		"build": "next build",
 		"check-types": "tsc --noEmit",
+		"coverage": "vitest run --coverage",
 		"dev": "next dev --turbopack --port 3000",
 		"lint": "next lint --max-warnings 0",
-		"start": "next start"
+		"start": "next start",
+		"test": "vitest"
 	},
 	"type": "module",
 	"version": "0.1.0"

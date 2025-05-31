@@ -13,8 +13,38 @@ import stylistic from '../rules/stylistic.js';
 import variables from '../rules/variables.js';
 import comments from './comments.js';
 
+/** @type {import('eslint').Linter.Config} */
+export const baseConfig = {
+	name: '@jablab/eslint-config-base',
+	plugins: {
+		unicorn,
+		'simple-import-sort': simpleImportSort,
+	},
+	rules: {
+		...bestPractice,
+		...es6,
+		...importConfig,
+		...possibleErrors,
+		...stylistic,
+		...variables,
+	},
+	ignores: [
+		'dist/**',
+		'build/**',
+		'out/**',
+		'coverage/**',
+		'node_modules/**',
+		'eslint.config.js',
+		'eslint.config.mjs',
+		'eslint.config.cjs',
+		'*.config.js',
+		'*.config.mjs',
+		'*.config.cjs',
+	],
+};
+
 /** @type {import('eslint').Linter.Config[]} */
-const config = [
+const configs = [
 	eslintjs.configs.recommended,
 	eslintConfigPrettier,
 	...tseslint.configs.recommended,
@@ -22,32 +52,9 @@ const config = [
 	...comments,
 	stylisticPlugin.configs.customize({
 		semi: true,
+		arrowParens: 'as-needed',
 	}),
-	{
-		plugins: {
-			unicorn,
-			'simple-import-sort': simpleImportSort,
-		},
-		rules: {
-			...bestPractice,
-			...es6,
-			...importConfig,
-			...possibleErrors,
-			...stylistic,
-			...variables,
-		},
-		ignores: [
-			'dist/**',
-			'build/**',
-			'out/**',
-			'coverage/**',
-			'node_modules/**',
-			'eslint.config.js',
-			'eslint.config.mjs',
-			'eslint.config.cjs',
-			'*.config.mjs',
-		],
-	},
+	baseConfig,
 ];
 
-export default config;
+export default configs;

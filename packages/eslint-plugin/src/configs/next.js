@@ -8,17 +8,22 @@ import globals from 'globals';
 
 import reactRules from '../rules/react.js';
 import baseConfig from './base.js';
-import tseslintConfig from './typescript.js';
+import tseslintConfigs, { tseslintConfig } from './typescript.js';
 
 /** @type {import('eslint').Linter.Config[]} */
-const config = [
+const configs = [
 	...baseConfig,
 	js.configs.recommended,
 	eslintConfigPrettier,
 	importPlugin.flatConfigs.recommended,
-	...tseslintConfig,
+	pluginReact.configs.flat.recommended,
+	...tseslintConfigs,
 	{
-		...pluginReact.configs.flat.recommended,
+		name: '@jablab/eslint-config-nextjs',
+		plugins: {
+			'@next/next': pluginNext,
+			'react-hooks': pluginReactHooks,
+		},
 		languageOptions: {
 			...pluginReact.configs.flat.recommended?.languageOptions,
 			globals: {
@@ -30,30 +35,18 @@ const config = [
 			},
 		},
 		settings: {
-			// Use the Node resolver by default.
 			'import/resolver': { node: {} },
+			react: { version: 'detect' },
 		},
 		linterOptions: {
 			reportUnusedDisableDirectives: true,
 		},
-	},
-	{
-		plugins: {
-			'@next/next': pluginNext,
-		},
-		rules: {
-			...pluginNext.configs.recommended.rules,
-			...pluginNext.configs['core-web-vitals'].rules,
-		},
-	},
-	{
-		plugins: {
-			'react-hooks': pluginReactHooks,
-		},
-		settings: { react: { version: 'detect' } },
 		rules: {
 			...pluginReactHooks.configs['recommended-latest'].rules,
 			...reactRules,
+			...pluginNext.configs.recommended.rules,
+			...pluginNext.configs['core-web-vitals'].rules,
+			...tseslintConfig.rules,
 		},
 	},
 	{
@@ -90,4 +83,4 @@ const config = [
 	},
 ];
 
-export default config;
+export default configs;
