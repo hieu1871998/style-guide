@@ -31,10 +31,11 @@ import { plugin as jablabPlugin } from '@jablab/eslint-plugin';
 
 export default [
 	...jablabPlugin.configs.base,
-	// or for React/Next.js/TypeScript:
+	// or for React/Next.js/TypeScript/Vitest:
 	// ...jablabPlugin.configs.react,
 	// ...jablabPlugin.configs.next,
 	// ...jablabPlugin.configs.typescript,
+	// ...jablabPlugin.configs.vitest,
 ];
 ```
 
@@ -53,6 +54,7 @@ Or, if using legacy config:
 - `react` – React-specific rules
 - `next` – Next.js-specific rules
 - `typescript` – TypeScript-specific rules
+- `vitest` – Vitest-specific rules
 
 ## Example: Import Sorting
 
