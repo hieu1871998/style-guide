@@ -12,16 +12,16 @@ npx create-turbo@latest
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+This Turborepo includes the following packages:
 
-### Apps and Packages
+### Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@jabworks/eslint-plugin`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@jabworks/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@jabworks/eslint-plugin`: Opinionated ESLint plugin and flat config for JS, TS, React, and Next.js.
+- `@jabworks/typescript-config`: Shared `tsconfig.json` configurations used throughout the monorepo.
+- `@jabworks/prettier-config`: Placeholder for Prettier shared configuration. _(Currently a placeholder)_
+- `@jabworks/stylelint-config`: Placeholder for Stylelint shared configuration. _(Currently a placeholder)_
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Each package is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
