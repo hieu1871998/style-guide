@@ -6,7 +6,7 @@ import vitestRules from '../rules/vitest.js';
 /** @type {import('eslint').Linter.Config[]} */
 const configs = [
 	{
-		name: '@jablab/eslint-config-vitest',
+		name: '@jabworks/eslint-config-vitest',
 		files: ['**/*.test.{js,ts,mjs,cjs,jsx,tsx}', '**/__tests__/**', '**/tests/**'],
 		plugins: {
 			vitest,

@@ -11,7 +11,7 @@ import tseslintConfig from './typescript.js';
 
 /** @type {import("eslint").Linter.Config} */
 export const reactConfig = {
-	name: '@jablab/eslint-config-react',
+	name: '@jabworks/eslint-config-react',
 	languageOptions: {
 		...pluginReact.configs.flat.recommended?.languageOptions,
 		globals: {

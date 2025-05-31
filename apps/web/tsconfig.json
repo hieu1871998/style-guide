@@ -1,5 +1,5 @@
 {
-	"extends": "@jablab/typescript-config/nextjs.json",
+	"extends": "@jabworks/typescript-config/nextjs.json",
 	"compilerOptions": {
 		"plugins": [
 			{

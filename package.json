@@ -1,5 +1,5 @@
 {
-	"name": "@jablab/style-guide",
+	"name": "@jabworks/style-guide",
 	"private": true,
 	"scripts": {
 		"build": "turbo run build",

@@ -1,4 +1,4 @@
-# @jablab/eslint-plugin
+# @jabworks/eslint-plugin
 
 ## 0.1.0
 

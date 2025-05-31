@@ -3,7 +3,7 @@
 	"devDependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
 		"@eslint/js": "^9.27.0",
-		"@jablab/typescript-config": "workspace:*",
+		"@jabworks/typescript-config": "workspace:*",
 		"@next/eslint-plugin-next": "^15.3.2",
 		"@stylistic/eslint-plugin": "^4.4.0",
 		"@types/node": "^22.15.23",
@@ -43,7 +43,7 @@
 		"typescript-eslint"
 	],
 	"main": "./src/index.js",
-	"name": "@jablab/eslint-plugin",
+	"name": "@jabworks/eslint-plugin",
 	"peerDependencies": {
 		"eslint": ">=9.27.0",
 		"typescript": ">=5.8.0",

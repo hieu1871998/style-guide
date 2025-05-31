@@ -39,10 +39,10 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
-      '@jablab/eslint-plugin':
+      '@jabworks/eslint-plugin':
         specifier: workspace:*
         version: link:../../packages/eslint-plugin
-      '@jablab/typescript-config':
+      '@jabworks/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/node':
@@ -73,10 +73,10 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
-      '@jablab/eslint-plugin':
+      '@jabworks/eslint-plugin':
         specifier: workspace:*
         version: link:../../packages/eslint-plugin
-      '@jablab/typescript-config':
+      '@jabworks/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/node':
@@ -121,7 +121,7 @@ importers:
       '@eslint/js':
         specifier: ^9.27.0
         version: 9.27.0
-      '@jablab/typescript-config':
+      '@jabworks/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@next/eslint-plugin-next':

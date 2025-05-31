@@ -19,7 +19,7 @@ const configs = [
 	pluginReact.configs.flat.recommended,
 	...tseslintConfigs,
 	{
-		name: '@jablab/eslint-config-nextjs',
+		name: '@jabworks/eslint-config-nextjs',
 		plugins: {
 			'@next/next': pluginNext,
 			'react-hooks': pluginReactHooks,

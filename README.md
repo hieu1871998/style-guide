@@ -18,8 +18,8 @@ This Turborepo includes the following packages/apps:
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
-- `@jablab/eslint-plugin`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@jablab/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@jabworks/eslint-plugin`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@jabworks/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 

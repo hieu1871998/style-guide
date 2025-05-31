@@ -15,7 +15,7 @@ import comments from './comments.js';
 
 /** @type {import('eslint').Linter.Config} */
 export const baseConfig = {
-	name: '@jablab/eslint-config-base',
+	name: '@jabworks/eslint-config-base',
 	plugins: {
 		unicorn,
 		'simple-import-sort': simpleImportSort,

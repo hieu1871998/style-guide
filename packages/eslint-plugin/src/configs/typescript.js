@@ -9,7 +9,7 @@ import typescriptRules from '../rules/typescript.js';
 
 /** @type {import('eslint').Linter.Config} */
 export const tseslintConfig = {
-	name: '@jablab/eslint-config-typescript',
+	name: '@jabworks/eslint-config-typescript',
 	files: TYPESCRIPT_FILES,
 	rules: {
 		...typescriptRules,

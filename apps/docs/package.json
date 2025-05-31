@@ -5,8 +5,8 @@
 		"react-dom": "^19.1.0"
 	},
 	"devDependencies": {
-		"@jablab/eslint-plugin": "workspace:*",
-		"@jablab/typescript-config": "workspace:*",
+		"@jabworks/eslint-plugin": "workspace:*",
+		"@jabworks/typescript-config": "workspace:*",
 		"@types/node": "^22.15.23",
 		"@types/react": "19.1.6",
 		"@types/react-dom": "19.1.5",

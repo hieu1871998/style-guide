@@ -1,4 +1,4 @@
-# @jablab/eslint-plugin
+# @jabworks/eslint-plugin
 
 A custom ESLint plugin and shareable config for JavaScript, TypeScript, React, and Next.js projects. This package provides a set of curated rules and configurations to help enforce code quality, consistency, and best practices across your codebase.
 
@@ -14,11 +14,11 @@ A custom ESLint plugin and shareable config for JavaScript, TypeScript, React, a
 ## Installation
 
 ```bash
-pnpm add -D @jablab/eslint-plugin
+pnpm add -D @jabworks/eslint-plugin
 # or
-yarn add -D @jablab/eslint-plugin
+yarn add -D @jabworks/eslint-plugin
 # or
-npm install --save-dev @jablab/eslint-plugin
+npm install --save-dev @jabworks/eslint-plugin
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ Add the plugin to your ESLint configuration. Example using the flat config forma
 
 ```js
 // eslint.config.js or eslint.config.mjs
-import { plugin as jablabPlugin } from '@jablab/eslint-plugin';
+import { plugin as jablabPlugin } from '@jabworks/eslint-plugin';
 
 export default [
 	...jablabPlugin.configs.base,
@@ -43,7 +43,7 @@ Or, if using legacy config:
 
 ```json
 {
-	"extends": ["plugin:@jablab/base"]
+	"extends": ["plugin:@jabworks/base"]
 }
 ```
 
