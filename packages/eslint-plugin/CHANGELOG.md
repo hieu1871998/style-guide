@@ -1,7 +1,7 @@
 # @jabworks/eslint-plugin
 
-## 0.1.0
+## 1.0.0
 
-### Minor Changes
+### Major Changes
 
 - Initial release
