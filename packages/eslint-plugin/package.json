@@ -34,6 +34,7 @@
 			"types": "./src/types/index.d.ts"
 		}
 	},
+	"homepage": "https://github.com/hieu1871998/style-guide/tree/main/packages/eslint-plugin",
 	"keywords": [
 		"eslint",
 		"eslint-config",
