@@ -52,7 +52,7 @@
 	"private": false,
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/hieu1871998/style-guide/tree/main/packages/eslint-plugin"
 	},
 	"type": "module",
 	"types": "./src/types/index.d.ts",

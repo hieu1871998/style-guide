@@ -1,5 +1,7 @@
 # Style Guide Configurations
 
+[![NPM Version](https://img.shields.io/npm/v/%40jabworks%2Feslint-plugin?style=flat-square&logo=npm&label=%40jabworks%2Feslint-plugin)](https://www.npmjs.com/package/@jabworks/eslint-plugin)
+
 This repository contains a collection of shareable configurations for various linting and formatting tools.
 
 ## What's inside?

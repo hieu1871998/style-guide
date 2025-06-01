@@ -1,5 +1,7 @@
 # @jabworks/eslint-plugin
 
+[![NPM Version](https://img.shields.io/npm/v/%40jabworks%2Feslint-plugin?style=flat-square&logo=npm)](https://www.npmjs.com/package/@jabworks/eslint-plugin)
+
 A custom ESLint plugin and shareable config for JavaScript, TypeScript, React, and Next.js projects. This package provides a set of curated rules and configurations to help enforce code quality, consistency, and best practices across your codebase.
 
 ## Features
