@@ -1,6 +1,5 @@
 {
-	"description": "Opinionated ESLint plugin and flat config for JS, TS, React, and Next.js",
-	"devDependencies": {
+	"dependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
 		"@eslint/js": "^9.27.0",
 		"@jabworks/typescript-config": "workspace:*",
@@ -28,6 +27,7 @@
 		"typescript": "^5.8.3",
 		"typescript-eslint": "^8.33.0"
 	},
+	"description": "Opinionated ESLint plugin and flat config for JS, TS, React, and Next.js",
 	"exports": {
 		".": {
 			"import": "./src/index.js",
