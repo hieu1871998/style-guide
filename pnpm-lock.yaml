@@ -121,9 +121,6 @@ importers:
       '@eslint/js':
         specifier: ^9.27.0
         version: 9.27.0
-      '@jabworks/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
       '@next/eslint-plugin-next':
         specifier: ^15.3.2
         version: 15.3.2
@@ -193,6 +190,10 @@ importers:
       typescript-eslint:
         specifier: ^8.33.0
         version: 8.33.0(eslint@9.27.0)(typescript@5.8.3)
+    devDependencies:
+      '@jabworks/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
 
   packages/prettier-config: {}
 
