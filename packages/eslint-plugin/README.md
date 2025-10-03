@@ -29,15 +29,15 @@ Add the plugin to your ESLint configuration. Example using the flat config forma
 
 ```js
 // eslint.config.js or eslint.config.mjs
-import { plugin as jablabPlugin } from '@jabworks/eslint-plugin';
+import { plugin as jabworksPlugin } from '@jabworks/eslint-plugin';
 
 export default [
-	...jablabPlugin.configs.base,
+	...jabworksPlugin.configs.base,
 	// or for React/Next.js/TypeScript/Vitest:
-	// ...jablabPlugin.configs.react,
-	// ...jablabPlugin.configs.next,
-	// ...jablabPlugin.configs.typescript,
-	// ...jablabPlugin.configs.vitest,
+	// ...jabworksPlugin.configs.react,
+	// ...jabworksPlugin.configs.next,
+	// ...jabworksPlugin.configs.typescript,
+	// ...jabworksPlugin.configs.vitest,
 ];
 ```
 
