@@ -12,16 +12,10 @@ export const config: Config = {
 	singleAttributePerLine: true,
 	singleQuote: true,
 	tabWidth: 2,
-	trailingComma: 'es5',
-	useTabs: true,
+	trailingComma: 'all',
+	useTabs: false,
 	plugins: ['prettier-plugin-tailwindcss', 'prettier-plugin-sort-json', 'prettier-plugin-packagejson'],
 	overrides: [
-		{
-			files: ['package.json', '**/package.json'],
-			options: {
-				plugins: ['prettier-plugin-packagejson'],
-			},
-		},
 		{
 			files: ['*.json', '**/*.json'],
 			excludeFiles: ['package.json', '**/package.json'],
