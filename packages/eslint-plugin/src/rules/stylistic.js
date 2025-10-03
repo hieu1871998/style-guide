@@ -114,7 +114,7 @@ const rules = {
 	 * 🔧 Fixable - https://eslint.org/docs/latest/rules/prefer-arrow-callback
 	 */
 	'prefer-arrow-callback': 'warn',
-	'@stylelistic/spaced-comment': 'error',
+	'@stylistic/spaced-comment': 'error',
 };
 
 export default rules;
