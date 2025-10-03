@@ -1,5 +1,11 @@
 # @jabworks/eslint-plugin
 
+## 1.0.3
+
+### Patch Changes
+
+- Tweak stylistic rules
+
 ## 1.0.2
 
 ### Patch Changes
