@@ -18,6 +18,9 @@ jobs:
       - name: Install
         uses: ./.github/composite-actions/install
 
+      - name: build
+        uses: ./.github/composite-actions/build
+
       - name: Modify .npmrc for publishing to npm
         run: |
           cat << EOF > "$HOME/.npmrc"
